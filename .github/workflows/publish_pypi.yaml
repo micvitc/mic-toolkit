@@ -1,6 +1,8 @@
 name: Publish to PyPI
 on:
   workflow_dispatch:
+  release:
+      types: [published]
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -23,6 +25,13 @@ jobs:
           key: venv-${{ hashFiles('poetry.lock') }}
       - name: Install the project dependencies
         run: poetry install
+      - name: Build package
+        run: poetry build
+      - name: Upload built package as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: built-package
+          path: dist/*
       - name: Configure Poetry
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - name: Publish package
