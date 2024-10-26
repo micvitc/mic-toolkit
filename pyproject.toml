@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mic-toolkit"
-version = "0.2.4"
+version = "0.2.5"
 description = "Internal toolkit for Microsoft Innovations Club VITC."
 authors = ["Ameen Shaikh <mohammedameen9011@gmail.com>"]
 license = "MIT"
