@@ -30,6 +30,8 @@ jobs:
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - name: Publish package
         run: poetry publish --build
+      - name: List files in dist
+        run: ls -la dist
       - name: Upload to GitHub Release
         if: github.event_name == 'release'
         uses: actions/upload-release-asset@v1
