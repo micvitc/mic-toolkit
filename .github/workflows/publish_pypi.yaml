@@ -30,13 +30,11 @@ jobs:
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - name: Publish package
         run: poetry publish --build
-      - name: List files in dist
-        run: ls -la dist
-      - name: Upload to GitHub Release
-        if: github.event_name == 'release'
+      - name: Upload artifacts to GitHub Release
+        if: ${{ github.event_name == 'release' && github.event.release.upload_url != '' }}
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: dist/*.tar.gz
-          asset_name: ${{ github.event.release.tag_name }}.tar.gz
+          asset_path: dist/*
+          asset_name: ${{ github.event.release.tag_name }}-artifact  # Gives a name to each asset
           asset_content_type: application/gzip
