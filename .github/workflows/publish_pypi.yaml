@@ -2,7 +2,8 @@ name: Publish to PyPI
 on:
   workflow_dispatch:
   release:
-      types: [published]
+    types: [published]
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -35,4 +36,11 @@ jobs:
       - name: Configure Poetry
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - name: Publish package
-        run: poetry publish
+        run: poetry publish --build
+      - name: Upload to GitHub Release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: dist/*
+          asset_name: ${{ github.event.release.tag_name }}.tar.gz
+          asset_content_type: application/gzip
