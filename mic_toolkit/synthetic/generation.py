@@ -77,5 +77,9 @@ class TextGenerationPipeline:
             raise e
 
 
+def sqr(x: int) -> int:
+    return x**2
+
+
 if __name__ == "__main__":
     pass
