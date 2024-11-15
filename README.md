@@ -1,17 +1,21 @@
-# mic-toolkit
+# Mic Toolkit
 
-![PyPI - Version](https://img.shields.io/pypi/v/mic-toolkit?style=flat)
-[![CI](https://github.com/micvitc/mic-toolkit/actions/workflows/ci.yaml/badge.svg)](https://github.com/micvitc/mic-toolkit/actions/workflows/ci.yaml)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.12-blue.svg)
+![Poetry](https://img.shields.io/badge/poetry-1.1.0-blue.svg)
 
+## Overview
 
-Internal utility library for micvitc.
+Simple synthetic data generation using LLMs.
 
-## Docs
+## Features
 
-https://micvitc.github.io/mic-toolkit/
+- **Text Generation**
 
 ## Installation
 
-``` py
+To install Mic Toolkit, use the following command:
+
+```sh
 pip install mic-toolkit
 ```
