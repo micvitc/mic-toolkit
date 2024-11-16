@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "mic-toolkit"
 version = "0.3.0"
-description = "Internal toolkit for Microsoft Innovations Club VITC."
+description = "Simple synthetic data generation using LLMs."
 authors = ["Ameen Shaikh <mohammedameen9011@gmail.com>"]
 license = "MIT"
 readme = "README.md"
