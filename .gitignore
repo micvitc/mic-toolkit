@@ -165,8 +165,8 @@ sad-utils-env/
 notebooks/
 
 *.ipynb
-
+*.csv
 main.py
 test.py
-
+*.prof
 .ruff_cache/
