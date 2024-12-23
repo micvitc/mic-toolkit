@@ -25,3 +25,5 @@ pip install mic-toolkit
 ## Docs
 
 Check out the [documentation](https://micvitc.github.io/mic-toolkit/) for more details.
+
+For contribution guidelines, refer to the [Contribution Guidelines](https://micvitc.github.io/mic-toolkit/contributing).

@@ -9,30 +9,31 @@
 ### 2. Clone the repository
 
 ```bash
-
-https://github.com/your-github-id/mic-toolkit.git
-
+git clone https://github.com/your-github-id/mic-toolkit.git
 ```
 
 ### 3. Install dependencies
 
 ```bash
-
 poetry install
-
 ```
-Activate envrionment
+
+Activate the environment
 
 ```bash
-
 poetry shell
-
 ```
 
-### 4. Commit and push some changes changes
+Make your changes, then commit and push them.
 
-```bash
+### 4. Create a pull request 
 
+![alt text](image-1.png)
 
+![alt text](image-2.png)
 
-```
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+Once reviewed, the pull request will be merged.
