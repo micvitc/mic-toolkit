@@ -3,6 +3,7 @@ site_url: https://micvitc.github.io/mic-toolkit/
 nav:
     - Home: index.md
     - Synthetic: synthetic.md
+    - Contributing: contributing.md
 repo_url: https://github.com/micvitc/mic-toolkit
 repo_name: micvitc/mic-toolkit
 
