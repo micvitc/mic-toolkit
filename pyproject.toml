@@ -11,6 +11,10 @@ python = "^3.12"
 datasets = "^3.0.0"
 ollama = "^0.3.3"
 tqdm = "^4.67.0"
+onnx = "^1.17.0"
+onnxruntime = "^1.20.1"
+openai = "^1.59.8"
+python-dotenv = "^1.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -22,6 +26,7 @@ ipykernel = "^6.29.5"
 pytest = "^8.3.3"
 snakeviz = "^2.2.2"
 tabulate = "^0.9.0"
+ruff = "^0.9.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
