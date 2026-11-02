@@ -169,5 +169,4 @@ main.py
 test.py
 *.prof
 .ruff_cache/
-config.bat
 node_modules
