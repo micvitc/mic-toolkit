@@ -1,3 +1,7 @@
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 from ollama import Client
 import pandas as pd
 from tqdm import tqdm
