@@ -170,4 +170,4 @@ test.py
 *.prof
 .ruff_cache/
 node_modules
-config.bat
+.env
